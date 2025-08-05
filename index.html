@@ -17,28 +17,5 @@
   </body>
 
 
-  <script>
-    
-    
-  const data = [
-      { "week": 1, "Sap": "A001", "Descripcion": "Description 1" },
-      { week: "2", Sap: "A002", Descripcion: "Description 2" },
-      { week: "3", Sap: "A003", Descripcion: "Description 3" }
-    ];
-    const d = document.querySelector("#fill")
-    let html = " "
-    for (let row of data) {
-      html += `
- <tr >
-      <td>${row.week}</td>
-      <td>${row.Sap}</td>
-      <td>${row.Descripcion}</td>
-  </tr>
-      `
-    }
-    d.innerHTML =
-      `<tr><th>week</th>
-        <th>Sap</th>
-        <th>Descripcion</th></tr>` + html;
-  </script>
+  <script src="/script.js"></script>
 </html>
