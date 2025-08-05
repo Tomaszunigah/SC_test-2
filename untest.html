@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="fill">
+      <!-- <tr>
+         <th>week</th>
+        <th>Sap</th>
+        <th>Descripcion</th>
+      </tr>
+      <tr  ></tr>  -->
+    </table>
+  </body>
+
+
+  <script>
+    
+    
+  const data = [
+      { "week": 1, "Sap": "A001", "Descripcion": "Description 1" },
+      { week: "2", Sap: "A002", Descripcion: "Description 2" },
+      { week: "3", Sap: "A003", Descripcion: "Description 3" }
+    ];
+    const d = document.querySelector("#fill")
+    let html = " "
+    for (let row of data) {
+      html += `
+ <tr >
+      <td>${row.week}</td>
+      <td>${row.Sap}</td>
+      <td>${row.Descripcion}</td>
+  </tr>
+      `
+    }
+    d.innerHTML =
+      `<tr><th>week</th>
+        <th>Sap</th>
+        <th>Descripcion</th></tr>` + html;
+  </script>
+</html>
